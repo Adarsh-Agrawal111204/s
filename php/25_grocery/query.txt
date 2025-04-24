@@ -1,0 +1,15 @@
+CREATE DATABASE grocery_store;
+USE grocery_store;
+
+CREATE TABLE products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  price DECIMAL(10,2)
+);
+
+INSERT INTO products (name, price) VALUES 
+('Rice (1kg)', 50.00),
+('Wheat Flour (1kg)', 45.00),
+('Sugar (1kg)', 40.00),
+('Milk (1L)', 30.00),
+('Tea Powder (250g)', 90.00);

@@ -1,0 +1,12 @@
+-- Step 1: Create the database (if it doesn't exist)
+CREATE DATABASE IF NOT EXISTS cookie;
+
+-- Step 2: Use the database
+USE cookie;
+
+-- Step 3: Create the user table
+CREATE TABLE `user` (
+  userid INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL
+);

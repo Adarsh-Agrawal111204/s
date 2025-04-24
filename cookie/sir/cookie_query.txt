@@ -1,0 +1,19 @@
+CREATE DATABASE cookie;
+
+CREATE TABLE `user` (
+  `userid` INT(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(30) NOT NULL,
+  `password` VARCHAR(30) NOT NULL,
+  `fullname` VARCHAR(60) NOT NULL,
+PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+--Next, we insert users into our database. This will be our reference when we log in.
+
+--Click the database we created earlier.
+--Click SQL and paste the code below.
+
+INSERT INTO `user` (`username`, `password`, `fullname`) VALUES
+('virat', 'kohli', 'virat kohli'),
+('rohit', 'sharma', 'Rohit sharma');
